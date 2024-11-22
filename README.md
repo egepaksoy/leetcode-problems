@@ -11,7 +11,7 @@ Bu repository, **LeetCode** platformunda çözdüğüm algoritma ve veri yapıla
 
 | Problem Adı                        | Bağlantı                                |
 |------------------------------------|-----------------------------------------|
-| Matrisin 90 Derece Döndürülmesi    | [Rotate Image](./problems/rotate_image/README.md) |
+| Matrisin 90 Derece Döndürülmesi    | [Rotate Image](./problems/rotate_image) |
 | Daha Fazlası                       | Yakında yüklenecek!                     |
 
 ## Neden Bu Repository?
