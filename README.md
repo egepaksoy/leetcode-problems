@@ -12,6 +12,7 @@ Bu repository, **LeetCode** platformunda çözdüğüm algoritma ve veri yapıla
 | Problem Adı                        | Bağlantı                                |
 |------------------------------------|-----------------------------------------|
 | Matrisin 90 Derece Döndürülmesi    | [Rotate Image](./problems/rotate_image) |
+| Sudoku Doğrulama Problemi          | [Valid Sudoku](./problems/valid_sudoku) |
 | Daha Fazlası                       | Yakında yüklenecek!                     |
 
 ## Neden Bu Repository?
