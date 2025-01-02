@@ -4,8 +4,8 @@
 
 Bir tamsayı dizisi olan `height` verilmektedir. Bu dizi, uzunluğu `n` olan bir dizi olup, her bir elemanı bir dikey çizgiyi temsil eder. Bu çizgilerin uç noktaları şu şekildedir:
 
-- Birinci uç noktası: \((i, 0)\)
-- İkinci uç noktası: \((i, height[i])\)
+- Birinci uç noktası: `(i, 0)`
+- İkinci uç noktası: `(i, height[i])`
 
 Bu çizgilerle birlikte, x ekseni ile bir kap oluşturmak için iki çizgi seçilir. Bu kap, en fazla suyu tutacak şekilde seçilmelidir.
 
@@ -22,7 +22,7 @@ Kap içerisinde tutulan maksimum su miktarını döndüren bir fonksiyon yazın�
 
 1. Her bir eleman diğer tüm elemanlarla kombinlenerek alan hesaplanır.
 2. Alanlar arasında maksimum olanı bulunur.
-3. Ancak bu yaklaşımda zaman karmaşıklığı \(O(n*(n+1)/2)\) olur, çünkü tüm elemanlar birbiriyle karşılaştırılır.
+3. Ancak bu yaklaşımda zaman karmaşıklığı `O(n*(n+1)/2)` olur, çünkü tüm elemanlar birbiriyle karşılaştırılır.
 
 Bu yöntem büyük veri setlerinde zaman aşımı sorunlarına yol açabilir. Bu nedenle daha verimli bir çözüm için farklı bir algoritma geliştirilmiştir.
 
@@ -33,19 +33,19 @@ Bu algoritma, listenin başı ve sonundan başlayarak iki pivot kullanır ve şu
 
 #### Adımlar:
 1. **Başlangıç Pivots**:
-   - İlk pivot \(i\), listenin başlangıç indeksine eşitlenir.
-   - İkinci pivot \(j\), listenin son indeksine eşitlenir.
+   - İlk pivot `i`, listenin başlangıç indeksine eşitlenir.
+   - İkinci pivot `j`, listenin son indeksine eşitlenir.
 
 2. **Alan Hesaplama**:
-   - Pivotlar arasındaki alan hesaplanır: \( \text{alan} = \min(\text{height}[i], \text{height}[j]) \times (j - i) \).
+   - Pivotlar arasındaki alan hesaplanır: `alan = min(height[i], height[j]) * (j - i)`.
 
 3. **Pivotları Güncelleme**:
    - Daha küçük olan pivotun değeri artırılır ya da azaltılır:
-     - Eğer \( \text{height}[i] < \text{height}[j] \), \(i\) pivotu bir ileri taşınır.
-     - Eğer \( \text{height}[i] > \text{height}[j] \), \(j\) pivotu bir geri taşınır.
+     - Eğer `height[i] < height[j]`, `i` pivotu bir ileri taşınır.
+     - Eğer `height[i] > height[j]`, `j` pivotu bir geri taşınır.
 
 4. **Döngü Kontrolü**:
-   - \(i < j\) olduğu sürece işlem devam eder. Pivotlar birbirini geçtiğinde döngü sonlanır ve maksimum alan döndürülür.
+   - `i < j` olduğu sürece işlem devam eder. Pivotlar birbirini geçtiğinde döngü sonlanır ve maksimum alan döndürülür.
 
 ---
 
@@ -142,7 +142,7 @@ def maxArea(height):
 ## Çalışma Mantığı ve Açıklama
 
 1. **Başlangıç Durumu**:
-   - \(i = 0\), \(j = n-1\) olacak şekilde pivotlar başlatılır.
+   - `i = 0`, `j = n-1` olacak şekilde pivotlar başlatılır.
    - Tüm alanlar hesaplanır ve maksimum değer kaydedilir.
 
 2. **Pivotların Güncellenmesi**:
@@ -193,6 +193,6 @@ print(maxArea(height))
 
 ## Sonuç
 
-Bu algoritma, çift pivot yaklaşımı kullanarak \(O(n)\) zaman karmaşıklığı ile maksimum alanı hesaplar. Bu, özellikle büyük veri setlerinde, kaba kuvvet yöntemine kıyasla ciddi performans artışı sağlar.
+Bu algoritma, çift pivot yaklaşımı kullanarak `O(n)` zaman karmaşıklığı ile maksimum alanı hesaplar. Bu, özellikle büyük veri setlerinde, kaba kuvvet yöntemine kıyasla ciddi performans artışı sağlar.
 
 ![Çalışma zamanı](./image.png)
