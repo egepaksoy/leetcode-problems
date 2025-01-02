@@ -15,6 +15,7 @@ Bu repository, **LeetCode** platformunda çözdüğüm algoritma ve veri yapıla
 | Sudoku Doğrulama Problemi          | [Valid Sudoku](./problems/valid_sudoku) |
 | İki Sayının Basamak Basamak Toplanması | [Add Two Numbers](./problems/add_two_numbers) |
 | Karakter Tekrarını Kaldırma | [Lognest String](./problems/longest_string) |
+| En Fazla Su Kapasitesi Problemi | [Container with Most Water](./problems/container_with_most_water) |
 | Daha Fazlası                       | Yakında yüklenecek!                     |
 
 ## Neden Bu Repository?

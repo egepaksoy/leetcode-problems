@@ -1,6 +1,3 @@
-#include <stdio.h>
-
-
 int max_area(int *height, int heightSize)
 {
     int max = 0;
@@ -11,9 +8,9 @@ int max_area(int *height, int heightSize)
         for (int j = 0; j < heightSize; j++)
         {
             if (height[i] < height[j])
-                currentVal = heightSize[i] * (j - i);
+                currentVal = height[i] * (j - i);
             else
-                currentVal = heightSize[j] * (j - i);
+                currentVal = height[j] * (j - i);
                 
             if (currentVal > max)
                 max = currentVal;
@@ -21,15 +18,4 @@ int max_area(int *height, int heightSize)
     }
 
     return max;
-}
-
-
-void main(void)
-{
-    int *height = {1,8,6,2,5,4,8,3,7};
-    int n = 9;
-
-    int result = max_area(height, n);
-
-    printf("%d", result);
 }
